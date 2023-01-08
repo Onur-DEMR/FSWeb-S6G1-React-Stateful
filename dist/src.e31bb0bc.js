@@ -25790,11 +25790,15 @@ function Sayac() {
     setSayici = _useState2[1];
   var artirici = function artirici() {
     /* ADIM 4 buraya */
+    setSayici(sayici + 1);
   };
   var azaltici = function azaltici() {
     /* ADIM 5 */
+    setSayici(sayici - 1);
   };
-  var reset = function reset() {};
+  var reset = function reset() {
+    setSayici(0);
+  };
   var stil = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
