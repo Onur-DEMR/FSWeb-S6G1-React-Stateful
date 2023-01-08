@@ -25992,7 +25992,7 @@ function Dondurucu() {
   };
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "widget-spinner container"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "D\xF6nd\xFCr\xFCc\xFC"), true && /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "D\xF6nd\xFCr\xFCc\xFC"), döndürücüAçık && /*#__PURE__*/_react.default.createElement("div", {
     id: "d\xF6nd\xFCr\xFCc\xFC",
     className: "spinner"
   }, "--+--") /* ADIM 2 */, /*#__PURE__*/_react.default.createElement("button", {
