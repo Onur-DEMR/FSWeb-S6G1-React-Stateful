@@ -39,6 +39,7 @@ export default function Kareler() {
   };
 
   const AktifEt = id => {
+    setAktifKare(id==aktifKare ? null: id);
     // Bu bir _satır içinden çağırılmış_ click handler yardımcısıdır.
     // id bağımsız değişkenini, stateteki aktif id olacak şekilde ayarlayın
     // eğer zaten aktifse, o zaman önce state i resetlemeliyiz.

@@ -26024,10 +26024,12 @@ function Kareler() {
     return id == aktifKare ? "active" : "";
   };
   var AktifEt = function AktifEt(id) {
+    setAktifKare(id == aktifKare ? null : id);
     // Bu bir _satır içinden çağırılmış_ click handler yardımcısıdır.
     // id bağımsız değişkenini, stateteki aktif id olacak şekilde ayarlayın
     // eğer zaten aktifse, o zaman önce state i resetlemeliyiz.
   };
+
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "widget-squares container"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Kareler"), /*#__PURE__*/_react.default.createElement("div", {
