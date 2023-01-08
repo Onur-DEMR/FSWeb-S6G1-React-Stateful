@@ -60,6 +60,7 @@ export default function Sayac() {
     setSayici(sayici-);
   };
   const reset = () => {
+    setSayici(0);
   };
 
   const stil = {
