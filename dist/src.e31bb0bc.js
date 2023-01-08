@@ -26038,7 +26038,7 @@ function Kareler() {
   // Kötü bug!  'KareIdListesi' yerine bir state dilimi kullanmalıyız.
   // Şöyle diyebiliriz: "aa bu çalışıyor!" Ama kareler bir state diliminden gelmiyorsa,
   // asla yeni kare ekleyemeyiz, kareleri düzenleyemeyiz ya da silemeyiz. Düzeltin!
-  KareIdListesi.map(function (id) {
+  kareler.map(function (id) {
     return /*#__PURE__*/_react.default.createElement("div", {
       id: id,
       key: id,
