@@ -26021,7 +26021,7 @@ function Kareler() {
     // Eğer argüman olarak verilen id aktif kare state'indeki id ile eşleşirse, class adı 'active' olan bir string döndürecek
     // diğer durumlar için boş döndürecek.
     // Etkisini görmek için kareye sağ tıklayın ve "öğeyi inceleyin".
-    return '';
+    return id == aktifKare ? "active" : "";
   };
   var AktifEt = function AktifEt(id) {
     // Bu bir _satır içinden çağırılmış_ click handler yardımcısıdır.
