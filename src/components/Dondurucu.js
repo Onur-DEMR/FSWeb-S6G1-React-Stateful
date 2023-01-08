@@ -41,6 +41,7 @@ export default function Dondurucu() {
 /* ADIM 1 */
 const [döndürücüAçık, setdöndürücüAcik] = useState(true);
   const toggleDondurucu = () => {
+    setdöndürücüAcik(!döndürücüAçık);
   /* ADIM 4 */
   };
 
@@ -51,7 +52,9 @@ const [döndürücüAçık, setdöndürücüAcik] = useState(true);
         döndürücüAçık && <div id='döndürücü' className='spinner'>--+--</div> /* ADIM 2 */
       }
       <button id='toggleDondurucu' onClick={toggleDondurucu}>
-         Gizle {/* STEP 3 */}
+        {
+         döndürücüAçık ? "Gizle" : "Göster"
+         /* STEP 3 */}
       </button>
     </div>
   );

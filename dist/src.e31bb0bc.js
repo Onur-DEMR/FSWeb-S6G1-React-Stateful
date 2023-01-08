@@ -25988,8 +25988,10 @@ function Dondurucu() {
     döndürücüAçık = _useState2[0],
     setdöndürücüAcik = _useState2[1];
   var toggleDondurucu = function toggleDondurucu() {
+    setdöndürücüAcik(!döndürücüAçık);
     /* ADIM 4 */
   };
+
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "widget-spinner container"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "D\xF6nd\xFCr\xFCc\xFC"), döndürücüAçık && /*#__PURE__*/_react.default.createElement("div", {
@@ -25998,7 +26000,8 @@ function Dondurucu() {
   }, "--+--") /* ADIM 2 */, /*#__PURE__*/_react.default.createElement("button", {
     id: "toggleDondurucu",
     onClick: toggleDondurucu
-  }, "Gizle "));
+  }, döndürücüAçık ? "Gizle" : "Göster"
+  /* STEP 3 */));
 }
 },{"react":"../node_modules/react/index.js"}],"components/Kareler.js":[function(require,module,exports) {
 "use strict";
