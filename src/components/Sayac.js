@@ -53,9 +53,11 @@ export default function Sayac() {
 	
   const artirici = () => {
     /* ADIM 4 buraya */
+    setSayici(sayici+1);
   };
   const azaltici = () => {
     /* ADIM 5 */
+    setSayici(sayici-);
   };
   const reset = () => {
   };
